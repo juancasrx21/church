@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hymns & Songs - St. Mary's Catholic Church</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-church"></i>
+                <h1>St. Mary's Catholic Church</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="songs.html" class="active">Hymns & Songs</a></li>
+                    <li><a href="#">Mass Times</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="user-menu">
+                <a href="login.html" class="btn-login-small">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Hymns & Songs</h2>
+                <p>Browse our collection of hymns and songs used in our liturgies</p>
+            </div>
+        </section>
+
+        <section class="songs-section">
+            <div class="container">
+                <div class="songs-filter">
+                    <div class="search-box">
+                        <input type="text" id="songSearch" placeholder="Search hymns...">
+                        <button type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="filter-options">
+                        <select id="categoryFilter">
+                            <option value="all">All Categories</option>
+                            <option value="entrance">Entrance</option>
+                            <option value="offertory">Offertory</option>
+                            <option value="communion">Communion</option>
+                            <option value="recessional">Recessional</option>
+                            <option value="seasonal">Seasonal</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="songs-grid" id="songsContainer">
+                    <!-- Entrance Hymns -->
+                    <div class="song-card" data-category="entrance">
+                        <div class="song-info">
+                            <h3>All Are Welcome</h3>
+                            <p>Category: Entrance</p>
+                            <p>Composer: Marty Haugen</p>
+                        </div>
+                        <div class="song-actions">
+                            <a href="#" class="btn-view" data-pdf="songs/all-are-welcome.pdf">
+                                <i class="fas fa-eye"></i> View
+                            </a>
+                            <a href="#" class="btn-download" data-pdf="songs/all-are-welcome.pdf">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="song-card" data-category="entrance">
+                        <div class="song-info">
+                            <h3>Gather Us In</h3>
+                            <p>Category: Entrance</p>
+                            <p>Composer: Marty Haugen</p>
+                        </div>
+                        <div class="song-actions">
+                            <a href="#" class="btn-view" data-pdf="songs/gather-us-in.pdf">
+                                <i class="fas fa-eye"></i> View
+                            </a>
+                            <a href="#" class="btn-download" data-pdf="songs/gather-us-in.pdf">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Offertory Hymns -->
+                    <div class="song-card" data-category="offertory">
+                        <div class="song-info">
+                            <h3>Here I Am, Lord</h3>
+                            <p>Category: Offertory</p>
+                            <p>Composer: Dan Schutte</p>
+                        </div>
+                        <div class="song-actions">
+                            <a href="#" class="btn-view" data-pdf="songs/here-i-am-lord.pdf">
+                                <i class="fas fa-eye"></i> View
+                            </a>
+                            <a href="#" class="btn-download" data-pdf="songs/here-i-am-lord.pdf">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="song-card" data-category="offertory">
+                        <div class="song-info">
+                            <h3>We Have Been Told</h3>
+                            <p>Category: Offertory</p>
+                            <p>Composer: David Haas</p>
+                        </div>
+                        <div class="song-actions">
+                            <a href="#" class="btn-view" data-pdf="songs/we-have-been-told.pdf">
+                                <i class="fas fa-eye"></i> View
+                            </a>
+                            <a href="#" class="btn-download" data-pdf="songs/we-have-been-told.pdf">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Communion Hymns -->
+                    <div class="song-card" data-category="communion">
+                        <div class="song-info">
+                            <h3>One Bread, One Body</h3>
+                            <p>Category: Communion</p>
+                            <p>Composer: John Foley, SJ</p>
+                        </div>
+                        <div class="song-actions">
+                            <a href="#" class="btn-view" data-pdf="songs/one-bread-one-body.pdf">
+                                <i class="fas fa-eye"></i> View
+                            </a>
+                            <a href="#" class="btn-download" data-pdf="songs/one-bread-one-body.pdf">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="song-card" data-category="communion">
+                        <div class="song-info">
+                            <h3>Taste and See</h3>
+                            <p>Category: Communion</p>
+                            <p>Composer: James E. Moore Jr.</p>
+                        </div>
+                        <div class="song-actions">
+                            <a href="#" class="btn-view" data-pdf="songs/taste-and-see.pdf">
+                                <i class="fas fa-eye"></i> View
+                            </a>
+                            <a href="#" class="btn-download" data-pdf="songs/taste-and-see.pdf">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Recessional Hymns -->
+                    <div class="song-card" data-category="recessional">
+                        <div class="song-info">
+                            <h3>City of God</h3>
+                            <p>Category: Recessional</p>
+                            <p>Composer: Dan Schutte</p>
+                        </div>
+                        <div class="song-actions">
+                            <a href="#" class="btn-view" data-pdf="songs/city-of-god.pdf">
+                                <i class="fas fa-eye"></i> View
+                            </a>
+                            <a href="#" class="btn-download" data-pdf="songs/city-of-god.pdf">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="song-card" data-category="recessional">
+                        <div class="song-info">
+                            <h3>Sing of the Lord's Goodness</h3>
+                            <p>Category: Recessional</p>
+                            <p>Composer: Ernest Sands</p>
+                        </div>
+                        <div class="song-actions">
+                            <a href="#" class="btn-view" data-pdf="songs/sing-of-the-lords-goodness.pdf">
+                                <i class="fas fa-eye"></i> View
+                            </a>
+                            <a href="#" class="btn-download" data-pdf="songs/sing-of-the-lords-goodness.pdf">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Seasonal Hymns -->
+                    <div class="song-card" data-category="seasonal">
+                        <div class="song-info">
+                            <h3>O Come, O Come, Emmanuel</h3>
+                            <p>Category: Seasonal (Advent)</p>
+                            <p>Composer: Traditional</p>
+                        </div>
+                        <div class="song-actions">
+                            <a href="#" class="btn-view" data-pdf="songs/o-come-emmanuel.pdf">
+                                <i class="fas fa-eye"></i> View
+                            </a>
+                            <a href="#" class="btn-download" data-pdf="songs/o-come-emmanuel.pdf">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="song-card" data-category="seasonal">
+                        <div class="song-info">
+                            <h3>Jesus Christ Is Risen Today</h3>
+                            <p>Category: Seasonal (Easter)</p>
+                            <p>Composer: Traditional</p>
+                        </div>
+                        <div class="song-actions">
+                            <a href="#" class="btn-view" data-pdf="songs/jesus-christ-is-risen.pdf">
+                                <i class="fas fa-eye"></i> View
+                            </a>
+                            <a href="#" class="btn-download" data-pdf="songs/jesus-christ-is-risen.pdf">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pdfViewer" class="pdf-viewer">
+                    <div class="pdf-header">
+                        <h3 id="pdfTitle">PDF Viewer</h3>
+                        <button id="closePdf"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="pdf-container">
+                        <p>PDF content would be displayed here in a real implementation.</p>
+                        <p>For this demo, we're showing a placeholder.</p>
+                        <div class="pdf-placeholder">
+                            <i class="fas fa-file-pdf"></i>
+                            <p>Sample PDF Content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <i class="fas fa-church"></i>
+                <h3>St. Mary's Catholic Church</h3>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="songs.html">Hymns & Songs</a></li>
+                        <li><a href="#">Mass Times</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Ministries</h4>
+                    <ul>
+                        <li><a href="#">Youth Ministry</a></li>
+                        <li><a href="#">Adult Faith Formation</a></li>
+                        <li><a href="#">Music Ministry</a></li>
+                        <li><a href="#">Outreach</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 St. Mary's Catholic Church. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
